@@ -33,6 +33,7 @@ fruits = ["Apple", "Orange", "Banana", "Dragon Fruit"]
 fruits.append("Jackfruit")
 fruits.sort()
 print(fruits)
+
 """
 
 """
@@ -137,7 +138,7 @@ print("your result division is:", a / b)
 
 """
 
-
+"""
 def addition(a, b):
     return a + b
 
@@ -153,15 +154,17 @@ def multiplication(a, b):
 def division(a, b):
     return a // b
 
+"""
 
-print("""
-Choose a type of your calculation:
+"""
+print(Choose a type of your calculation:
 1. Addtion
 2. Subtraction
 3. Multiplication
-4. Subtraction
+4. Subtraction)
+"""
 
-""")
+""" 
 
 choice = int(input("Enter your Choice:"))
 a = int(input("Enter your First Value:"))
@@ -177,4 +180,85 @@ elif choice == 4:
     print(division(a, b))
 else:
     print("Enter correct Choice")
+
+"""
+
+"""
+def multiply_or_add(num1, num2):
+    product = num1 * num2
+    if product <= 1000:
+        return product
+    else:
+        return num1 + num2
+
+num1 = int(input("Enter Number1:"))
+num2 = int(input("Enter Number2:"))
+
+result = multiply_or_add(num1, num2)
+print("The result is:", result)
+
+"""
+
+"""
+numbers = int(input("Enter Your Number:"))
+print("Printing current and Previous number sum in a range", numbers)
+
+previous_numbers = 0
+
+for current_number in range(1, numbers+1):
+    sum_of_numbers = current_number + previous_numbers
+    print("Current Number is:", current_number, "Previous Number is:", previous_numbers, "Sum is:", sum_of_numbers)
+    previous_numbers = current_number
+
+"""
+
+"""
+while n <= 10:
+    print("Current Numer is:", n, "Previous Number is:", n-1, "Sum:", n-1+n)
+    n += 1
+    break
+"""
+"""
+string = "pynative"
+print("Original String is:", string)
+print("Printing only even index chars")
+print("p")
+print("n")
+print("t")
+print("v")
+
+"""
+"""
+input_str = input("Original String is:")
+even_chars = ""
+for i in range(0, len(input_str), 2):
+    even_chars += input_str[i]
+print("Printing only even index Chars:")
+"""
+
+"""
+word = input("Enter a String:")
+print("Original String is:", word)
+
+size = len(word)
+print("Printing only Even Index Chars")
+
+for i in range(0, size - 1, 2):
+    print("index[", i, "]", word[i])
+"""
+"""
+word = input("Enter a String:")
+print("Original String is:", word)
+x = list(word)
+for i in x[0::2]:
+    print(i)
+"""
+
+
+
+
+
+
+
+
 

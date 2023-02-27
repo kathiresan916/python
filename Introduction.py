@@ -254,6 +254,32 @@ for i in x[0::2]:
     print(i)
 """
 
+"""
+def remove_chars(string, n):
+    return string[n:]
+
+
+string1 = "Kathiresan"
+n1 = 4
+print(remove_chars(string1, n1))
+
+string2 = "Kathiresan"
+n2 = 2l
+print(remove_chars(string2, n2))
+
+"""
+
+def remove_chars(word, n):
+    print("Original String:", word)
+    x = word[n:]
+    return x
+
+print("Removing Character from a String:")
+print(remove_chars("Kathiresan", 4))
+print(remove_chars("Kathireasn", 2))
+
+
+
 
 
 
